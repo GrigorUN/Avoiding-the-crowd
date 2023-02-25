@@ -42,13 +42,23 @@ public class PlayerController : MonoBehaviour
         {
             hasJumped = false;
         }
-        else if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Fall"))
+        else if (other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("¬ы проиграли!");
             isGameOver = true; // ставим флаг, что игра проиграна
             RestartGame(); // вызываем метод перезапуска игры
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Fall"))
+        {
+            Debug.Log("¬ы проиграли!");
+            isGameOver = true; // ставим флаг, что игра проиграна
+            RestartGame(); // вызываем метод перезапуска игры
+        }
+    }
+
 
     void RestartGame()
     {
@@ -57,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator RestartDelay()
     {
-        yield return new WaitForSeconds(2f); // ждем 1 секунду перед перезапуском игры
+        yield return new WaitForSeconds(0.5f); // ждем 1 секунду перед перезапуском игры
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // перезапускаем текущий уровень
     }
 }
