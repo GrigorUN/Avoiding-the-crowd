@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -45,8 +46,18 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Вы проиграли!");
             isGameOver = true; // ставим флаг, что игра проиграна
-                               // тут можно вызвать метод, который будет запускать анимацию смерти и останавливать игру
+            RestartGame(); // вызываем метод перезапуска игры
         }
     }
 
+    void RestartGame()
+    {
+        StartCoroutine(RestartDelay()); // вызываем корутину задержки перед перезапуском игры
+    }
+
+    IEnumerator RestartDelay()
+    {
+        yield return new WaitForSeconds(2f); // ждем 1 секунду перед перезапуском игры
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // перезапускаем текущий уровень
+    }
 }
