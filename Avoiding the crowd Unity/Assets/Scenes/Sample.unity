@@ -380,6 +380,7 @@ MonoBehaviour:
   - {fileID: 3239559769125302964, guid: 599e1b4dc2f0e834984fc7624c7d2b8f, type: 3}
   - {fileID: 1193752957152357748, guid: c8620f2ab7a966740bc2ad1452a9af6d, type: 3}
   - {fileID: 3307871491951211253, guid: 05b99fe0df62f5b4cb814653439376af, type: 3}
+  - {fileID: 4468926868979951900, guid: 912cd44a1e8691947a2ba305b1e270db, type: 3}
   player: {fileID: 1800707671}
 --- !u!4 &233612342
 Transform:
