@@ -9,11 +9,12 @@ public class Player : MonoBehaviour
 {
     public float speed = 5f;
     public float jumpForce = 10f;
-    private Rigidbody2D rb;
-    private bool isGameOver = false;
+    public Rigidbody2D rb;
+    public bool isGameOver = false;
     private bool hasJumped = false;
     private bool isOnPlatform = false; // флаг, указывающий, находится ли игрок на платформе
     public Button jumpButton;
+    private bool gameStarted = false;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!isGameOver)
+        if (!isGameOver && gameStarted)
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
         }
@@ -31,7 +32,7 @@ public class Player : MonoBehaviour
 
     public void JumpButtonPressed()
     {
-        if (isOnPlatform && !hasJumped && !isGameOver)
+        if (isOnPlatform && !hasJumped && !isGameOver && gameStarted)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             hasJumped = true;
@@ -86,6 +87,17 @@ public class Player : MonoBehaviour
     {
         throw new NotImplementedException();
     }
+
+    public void StartGame()
+    {
+        gameStarted = true;
+    }
+
+    void Update()
+    {
+        if (Input.touchCount > 0 && !gameStarted)
+        {
+            StartGame();
+        }
+    }
 }
-
-
