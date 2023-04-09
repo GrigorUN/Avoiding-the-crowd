@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     // Обработчик нажатия на кнопку "Начать игру"
     public void StartGame()
     {
+
         // Загрузка следующей сцены, которая будет содержать игровой уровень
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
