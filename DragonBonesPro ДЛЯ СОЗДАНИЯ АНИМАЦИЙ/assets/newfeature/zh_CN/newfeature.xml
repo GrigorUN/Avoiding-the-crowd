@@ -1,0 +1,69 @@
+<images>
+	<size width="640" height="500"></size>
+	<img alltext="0" url="assets/newfeature/zh_CN/slide_01.swf">
+		<span>
+			<font color="#FFFFFF">直接导入PSD<br/>无需安装Photoshop，直接拖拽PSD文件到<br/>DragonBones Pro里，便可导入。</font>
+		</span>
+	</img>
+	<img alltext="0" url="assets/newfeature/zh_CN/slide_02.swf">
+		<span>
+			<font color="#FFFFFF">添加IK时间轴<br/>在动画制作中可以对IK弯曲方向和权重添加关键帧。</font>
+		</span>	
+	</img>
+	<img alltext="0" url="assets/newfeature/zh_CN/slide_03.swf">
+		<span>
+			<font color="#FFFFFF">标尺和辅助线</font>
+		</span>		
+	</img>
+	<img alltext="0" url="assets/newfeature/zh_CN/slide_04.png">
+		<span>
+			<font color="#FFFFFF">全新的导出面板，可以预览纹理集</font>
+		</span>		
+	</img>
+	<img alltext="0" url="assets/newfeature/zh_CN/slide_05.png">
+		<span>
+			<font color="#FFFFFF">“导出到”功能<br/>灵活方便的设定数据导出位置。</font>
+		</span>	
+	</img>
+	<img alltext="0" url="assets/newfeature/zh_CN/slide_06.swf">
+		<span>
+			<font color="#FFFFFF">导出GIF可以设置透明背景了！</font>
+		</span>		
+	</img>
+	<img alltext="0" url="assets/newfeature/zh_CN/slide_07.swf">
+		<span>
+			<font color="#FFFFFF">更合理的替换图片流程与界面</font>
+		</span>		
+	</img>
+	<img alltext="0" url="assets/newfeature/zh_CN/slide_08.png">
+		<span>
+			<font color="#FFFFFF">跨项目/跨骨架复制粘贴</font>
+		</span>		
+	</img>
+		<img alltext="0" url="assets/newfeature/zh_CN/slide_09.png">
+		<span>
+			<font color="#FFFFFF">选择性粘贴<br/>灵活决定粘贴内容。</font>
+		</span>		
+	</img>
+		<img alltext="0" url="assets/newfeature/zh_CN/slide_10.png">
+		<span>
+			<font color="#FFFFFF">自定义骨骼颜色<br/>每根骨骼都可以设定不同的颜色。</font>
+		</span>		
+	</img>
+	<img alltext="1">
+		<span>
+			<font color="#FF9326">新增快捷键<br/></font>
+			<font color="#FFFFFF">- 时间轴中跳转关键帧：Y 和 H<br/>
+			- 变换工具栏，切换输入框：Tab<br/>
+			- 显隐辅助线：Ctrl/Cmd + ;<br/>
+			- 开关辅助线可选：Ctrl/Cmd + Alt + ;<br/>
+			- 开关时间轴筛选：Ctrl/Cmd + D<br/>
+			- 重命名：F2<br/>
+			- 复制变换：Ctrl/Cmd + Shift + C<br/>
+			- 粘贴变换：Ctrl/Cmd + Shift + V<br/>
+			</font>
+			<br/>
+			<font color="#5AA8F1"><a href="http://blog.dragonbones.com/cn/release/dragonbones-5-6.html">更多详细介绍</a></font>
+		</span>		
+	</img>
+</images>
