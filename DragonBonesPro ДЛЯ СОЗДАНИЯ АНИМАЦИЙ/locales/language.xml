@@ -1,8 +1,0 @@
-<root>
-  <language>en_US</language>
-  <package>
-    <item name="en_US" path="locales/en_US/strings.xml"/>
-    <item name="zh_CN" path="locales/zh_CN/strings.xml"/>
-    <item name="ru_RF" path="locales/ru_RF/strings.xml"/>
-  </package>
-</root>
