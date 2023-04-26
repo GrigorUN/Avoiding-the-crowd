@@ -8,11 +8,8 @@ public class MainMenu : MonoBehaviour
     // Обработчик нажатия на кнопку "Начать игру"
     public void StartGame()
     {
-
         // Загрузка следующей сцены, которая будет содержать игровой уровень
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        // Сбрасываем Time.timeScale на 1
-        Time.timeScale = 1f;
     }
 
     // Обработчик нажатия на кнопку "Настройки"
