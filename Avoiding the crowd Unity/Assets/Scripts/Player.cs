@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Animations;
 
 public class Player : MonoBehaviour
 {
+    public Animator animator;
     public float speed = 5f;
     public float jumpForce = 10f;
     public Rigidbody2D rb;
@@ -35,7 +37,10 @@ public class Player : MonoBehaviour
         if (isOnPlatform && !hasJumped && !isGameOver && gameStarted)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            animator.SetFloat("Speed", 0);
+            animator.SetBool("Jump", true);
             hasJumped = true;
+            Debug.Log("ПРЫЖОК");
         }
     }
 
@@ -43,11 +48,16 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Platform"))
         {
+            
             hasJumped = false;
             isOnPlatform = true; // игрок находится на платформе
+            animator.SetBool("Jump", false);
+            Debug.Log("Платформа");
         }
         else if (other.gameObject.CompareTag("Enemy"))
         {
+            animator.SetFloat("Speed", 0);
+            animator.SetBool("dead", true);
             Debug.Log("Вы проиграли!");
             isGameOver = true;
             RestartGame();
@@ -58,7 +68,10 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Platform"))
         {
-            isOnPlatform = false; // игрок больше не находится на платформе
+            animator.SetFloat("Speed", 0);
+            animator.SetBool("Jump", true);
+            isOnPlatform = false;
+            Debug.Log("НЕ Платформа");// игрок больше не находится на платформе
         }
     }
 
@@ -79,7 +92,7 @@ public class Player : MonoBehaviour
 
     IEnumerator RestartDelay()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -97,6 +110,8 @@ public class Player : MonoBehaviour
     {
         if (Input.touchCount > 0 && !gameStarted)
         {
+            animator.SetFloat("Speed", 1);
+            Debug.Log("NNNN");
             StartGame();
         }
     }
