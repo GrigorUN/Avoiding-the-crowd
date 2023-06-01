@@ -200,7 +200,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8682462601615585994, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_Name
@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7789796370800890597, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -7561113526181806574, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -344,7 +344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5811520488247423028, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -4286743905504271757, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_Bounds.m_Center.x
@@ -380,15 +380,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3423222987986308320, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -3098420850336549329, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -2793784703903303638, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -2368447750744439876, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -496,7 +496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1721413839682697643, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2015287661806188099, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,7 +572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3257660708143371425, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3267464128362527367, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_Bounds.m_Center.x
@@ -700,7 +700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6489606271760732455, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6736957807164001479, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -736,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7400841774689985284, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7499512867630714537, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -792,7 +792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8315281948211364786, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8733037237261858094, guid: 251cadaa19fef784aa7f3726cae161ac, type: 3}
       propertyPath: m_Bounds.m_Center.x
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 155942020}
-  speed: 4.23
+  speed: 4.05
   jumpForce: 8.7
   rb: {fileID: 0}
   isGameOver: 0
@@ -2199,7 +2199,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 73e78abee7edbf2428dec5324697cd52, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.048
+  m_Volume: 0.124
   m_Pitch: 1
   Loop: 0
   Mute: 0
