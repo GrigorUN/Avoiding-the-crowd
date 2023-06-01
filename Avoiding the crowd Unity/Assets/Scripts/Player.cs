@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
         else if (other.gameObject.CompareTag("Enemy"))
         {
             animator.SetFloat("Speed", 0);
+            animator.SetBool("Jump", false);
             animator.SetBool("dead", true);
             Debug.Log("Вы проиграли!");
             isGameOver = true;
@@ -79,6 +80,9 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Fall"))
         {
+            animator.SetFloat("Speed", 0);
+            animator.SetBool("Jump", false);
+            animator.SetBool("dead", true);
             Debug.Log("Вы проиграли!");
             isGameOver = true;
             RestartGame();
@@ -111,7 +115,7 @@ public class Player : MonoBehaviour
         if (Input.touchCount > 0 && !gameStarted)
         {
             animator.SetFloat("Speed", 1);
-            Debug.Log("NNNN");
+            Debug.Log("НАЧАЛО");
             StartGame();
         }
     }
